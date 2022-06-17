@@ -14,24 +14,24 @@ body {
 }
 
 .main-container {
-  background: url(../images/bg-mobile.svg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-image: url('../images/bg-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: fixed; 
+  background-attachment: fixed;
   width: 100%;
+  min-height: 100vh;
   padding: 0;
 }
 
 .main-content {
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  margin: 30px;
 }
 
 .logo {
   width: 160px;
-  height: auto;
   margin-bottom: 60px;
 }
 
@@ -74,7 +74,6 @@ body {
 
 .social-img {
   width: 38px;
-  height: auto;
   margin: 0 6px;
 }
 
@@ -83,7 +82,12 @@ body {
 
 @media only screen and (min-width: 900px) {
   .main-content {
-    padding: 60px;
+    margin: 60px;
+  }
+
+  .main-container {
+    background-image: url('../images/bg-desktop.svg');
+    background-size: cover;
   }
   
   .copy-ill-container {
@@ -119,6 +123,7 @@ body {
 
   .socials {
     text-align: right;
+    margin-top: 40px;
     margin-right: 60px;
   }
 
