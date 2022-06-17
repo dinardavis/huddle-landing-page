@@ -68,6 +68,11 @@ body {
   margin: 15px 0 90px;
 }
 
+.register-btn:hover {
+  background-color: hsl(300, 69%, 71%);
+  color:hsl(0, 0%, 100%);
+}
+
 .socials {
   text-align: center;
 }
